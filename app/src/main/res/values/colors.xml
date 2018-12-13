@@ -1,0 +1,32 @@
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#429917</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#429917</color>
+
+    <!-- Background color for the family members category -->
+    <color name="accent">#7A1EA1</color>
+
+    <!-- Background color for the colors category -->
+    <color name="bg_remind">#FF5722</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFFFFF</color>
+
+    <!-- Background color for the numbers category -->
+    <color name="category_numbers">#FD8E09</color>
+
+    <!-- Background color for the family members category -->
+    <color name="category_family">#379237</color>
+
+    <!-- Background color for the colors category -->
+    <color name="category_colors">#FFFFFF</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="category_phrases">#16AFCA</color>
+
+
+    <color name="category_white">#FFFFFF</color>
+
+</resources>

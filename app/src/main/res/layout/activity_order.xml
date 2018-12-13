@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="@string/name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@color/primary_color"
+        android:textColorHint="@color/primary_color" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignStart="@+id/editCustomer"
+        android:layout_below="@+id/editCustomer"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/t_shirt_image_description"
+        android:onClick="dispatchTakePictureIntent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/imageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:onClick="dispatchTakePictureIntent"
+        android:text="@string/photo"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editOptional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="54dp"
+        android:hint="@string/delivery_collection"
+        android:inputType="textMultiLine"
+        android:textColor="@color/primary_color"
+        android:textColorHint="@color/primary_color" />
+
+
+    <TextView
+        android:id="@+id/editCollect"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editCustomer"
+        android:layout_marginBottom="75dp"
+        android:text="@string/ready_time"
+        android:textColor="@color/primary_color"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/imageView"
+        android:layout_alignTop="@id/editCollect"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@id/editCollect"
+        android:gravity="start"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageText"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="30dp"
+        android:onClick="sendEmail"
+        android:text="@string/order"
+        android:textColor="@color/primary_color" />
+</RelativeLayout>
