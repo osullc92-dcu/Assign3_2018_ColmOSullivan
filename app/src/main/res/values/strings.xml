@@ -20,8 +20,8 @@
         <item>" 3"</item>
         <item>" 4"</item>
         <item>" 5"</item>
-        <item>10</item>
-        <item>14</item>
+        <item>" 10"</item>
+        <item>" 14"</item>
 
     </string-array>
     <string name="customer_name">Name</string>
@@ -42,6 +42,9 @@
     <string name="name">Enter Your Name</string>
     <string name="t_shirt_image_description">Image / Button to let the user create an image for their t-shirt</string>
     <string name="delivery_collection">Delivery Address -or- For Collection</string>
+    <string name="no_picture_taken">No picture has been taken, this action must be completed before an email is sent</string>
+    <string name="select_delivery_or_collection">A delivery or collection option has not been entered, please do so before sending the email</string>
+    <string name="order_message_delivery">Please deliver the t-shirt to:</string>
 
 
 </resources>

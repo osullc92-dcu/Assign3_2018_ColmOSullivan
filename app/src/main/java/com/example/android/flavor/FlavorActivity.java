@@ -12,6 +12,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Last modified by Colm O'Sullivan on December 15th 2018
  */
 package com.example.android.flavor;
 
@@ -69,20 +71,13 @@ public class FlavorActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //AndroidFlavorAdapter flavorAdapter = new AndroidFlavorAdapter(this, androidFlavors);
                 //String selectedValue = androidFlavors.get(position).toString();
-
-                for (int a = 0; a < 3; a++){
-                    a++;
-                }
-
+                //AndroidFlavor currentAndroidFlavor = getItem(position);
                 Toast.makeText(
                         parent.getContext(),
-                        "The color is "
-                                + com.example.android.flavor.AndroidFlavor.class.toString(),
+                        "You have selected "
+                                + androidFlavors.get(position),
                         Toast.LENGTH_LONG).show();
 
-                /*Toast.makeText(getApplicationContext(),
-                        "You have selected " + selectedValue, Toast.LENGTH_LONG)
-                        .show();*/
             }
         });
     }
