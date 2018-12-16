@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Last modified by Colm O'Sullivan on December 15th 2018
+ * Last modified by Colm O'Sullivan on December 16th 2018
+ * Changes made to ArrayList and toast added to show name of ArrayList object when clicked
  */
 package com.example.android.flavor;
 
@@ -66,16 +67,12 @@ public class FlavorActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.listview_flavor);
         listView.setAdapter(flavorAdapter);
 
+        // Click listener to show a toast when the user clicks any of the
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //AndroidFlavorAdapter flavorAdapter = new AndroidFlavorAdapter(this, androidFlavors);
-                //String selectedValue = androidFlavors.get(position).toString();
-                //AndroidFlavor currentAndroidFlavor = getItem(position);
-                Toast.makeText(
-                        parent.getContext(),
-                        "You have selected "
-                                + androidFlavors.get(position),
+                TextView itemClicked = (TextView) view.findViewById(R.id.version_name);
+                Toast.makeText( FlavorActivity.this, "You have selected " + itemClicked.getText(),
                         Toast.LENGTH_LONG).show();
 
             }
